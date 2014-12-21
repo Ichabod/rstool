@@ -1,0 +1,43 @@
+{
+	"build_systems":
+	[
+		{
+			"name": "Project",
+			"shell_cmd": "cd $project_path ; make",
+			"variants":
+			[
+				{
+					"name": "Run",
+					"shell_cmd": "cd $project_path ; ./deos"
+				}
+			]
+		}
+	],
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"*.*~",
+				"prog",
+				"*.o",
+				"*.co",
+				"*.d",
+				"*.cd",
+				"*.fo",
+				".depend",
+				".scan",
+				"fkernel*",
+				"meshgen",
+				"*.grid",
+				"*.fig"
+			],
+			"folder_exclude_patterns":
+			[
+				"obj"
+			],
+			"follow_symlinks": true,
+			"path": "./"
+		},
+	]
+}
